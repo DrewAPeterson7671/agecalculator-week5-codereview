@@ -1,5 +1,6 @@
 export { ageEarthInputCalc }
 export { ageMercuryCalc }
+export { ageVenusCalc }
 
 
 
@@ -32,4 +33,9 @@ function PlanetAge(inputAge) {
 function ageMercuryCalc(inputAge) {
   let mercuryAge = Math.round(inputAge / mercuryFactor);
   return mercuryAge;
+}
+
+function ageVenusCalc(inputAge) {
+  let venusAge = (inputAge / venusFactor);
+  return venusAge;
 }
