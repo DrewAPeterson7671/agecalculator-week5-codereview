@@ -4,9 +4,11 @@ export { ageEarthCalc }
 // business logic
 
 let ageEarthCalc = function(input) {
-  if (typeof(input) !== typeof(number)) {
+  if (typeof(input) !== 'number') {
     return false;
-  } else {
+  } else if (typeof(input) == 'number') {
     return true;
+  } else {
+    return console.log('input type error');
   }
 }
