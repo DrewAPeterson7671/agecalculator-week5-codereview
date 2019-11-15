@@ -1,13 +1,12 @@
-import { ageEarthCalc } from './../src/agecalc-backend.js';
+import { ageEarthInputCalc } from './../src/agecalc-backend.js';
 
-describe('ageEarthCalc', () => {
+describe('ageEarthInputCalc', () => {
   test('determine if the number entered is not a number', () => {
-    let ageEarthCalcTest = ageEarthCalc('age');
+    let ageEarthCalcTest = ageEarthInputCalc('age');
     expect(ageEarthCalcTest).toEqual(false);
   });
   test('determine if the number entered is an number', () => {
-    let ageEarthCalcTest2 = ageEarthCalc(40);
-    console.log(ageEarthCalcTest2);
+    let ageEarthCalcTest2 = ageEarthInputCalc(40);
     expect(ageEarthCalcTest2).toEqual(true);
   });
 });

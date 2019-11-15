@@ -1,9 +1,9 @@
-export { ageEarthCalc }
+export { ageEarthInputCalc }
 
 
 // business logic
 
-let ageEarthCalc = function(input) {
+let ageEarthInputCalc = function(input) {
   if (typeof(input) !== 'number') {
     return false;
   } else if (typeof(input) === 'number') {
