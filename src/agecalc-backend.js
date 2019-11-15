@@ -41,7 +41,7 @@ class PlanetAge {
     return this.marsAge;
   }
   calcJupiter() {
-    this.jupiterAge = Math.floor(this.inputAge / marsFactor);
+    this.jupiterAge = Math.floor(this.inputAge / jupiterFactor);
     return this.jupiterAge;
   }
 
