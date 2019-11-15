@@ -16,7 +16,7 @@ describe('ageEarthInputCalc', () => {
     expect(ageMercuryCalcTest).toEqual(83);
   });
   test('determine if mercury age calculates correctly', () => {
-    let ageVenusCalcTest = ageVenusCalc(20);
-    expect(ageVenusCalcTest).toEqual(83);
+    let ageVenusCalcTest = ageVenusCalc(24);
+    expect(ageVenusCalcTest).toEqual(38);
   });
 });

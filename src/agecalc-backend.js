@@ -36,6 +36,6 @@ function ageMercuryCalc(inputAge) {
 }
 
 function ageVenusCalc(inputAge) {
-  let venusAge = (inputAge / venusFactor);
+  let venusAge = Math.round(inputAge / venusFactor);
   return venusAge;
 }
