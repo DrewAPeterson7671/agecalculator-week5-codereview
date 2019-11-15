@@ -1,4 +1,4 @@
-export { ageEarthInputCalc }
+// export { ageEarthInputCalc }
 export { ageMercuryCalc }
 export { ageVenusCalc }
 export { PlanetAge }
@@ -42,8 +42,12 @@ class PlanetAge {
     } else {
       console.log('input type error');
     }
-
   }
+  calcAges() {
+    return 7;
+    // this.mercuryAge = this.inputAge / mercuryFactor;
+  }
+
 
   // calcAge() {
   //   let mercuryAgeageMercuryCalc = Math.round(inputAge / mercuryFactor);

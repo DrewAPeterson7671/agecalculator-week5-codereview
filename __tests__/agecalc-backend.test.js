@@ -1,4 +1,4 @@
-import { ageEarthInputCalc } from './../src/agecalc-backend.js';
+// import { ageEarthInputCalc } from './../src/agecalc-backend.js';
 import { ageMercuryCalc } from './../src/agecalc-backend.js';
 import { ageVenusCalc } from './../src/agecalc-backend.js';
 import { PlanetAge } from  './../src/agecalc-backend.js';
@@ -36,5 +36,12 @@ describe('PlanetAge', () => {
     console.log(planetAgeTest3.inputAge);
     expect (planetAgeTest3.checkInput()).toEqual(true);
   });
+  test('test if mars calculation is correct and stored correctly', () => {
+    let marsAgeTest = new PlanetAge(20);
+    console.log(marsAgeTest.inputAge);
+    expect (marsAgeTest.calcAges()).toEqual(83);
+  });
+
+
 
 });
