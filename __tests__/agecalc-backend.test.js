@@ -1,17 +1,9 @@
-// import { ageEarthInputCalc } from './../src/agecalc-backend.js';
+
 import { ageMercuryCalc } from './../src/agecalc-backend.js';
 import { ageVenusCalc } from './../src/agecalc-backend.js';
 import { PlanetAge } from  './../src/agecalc-backend.js';
 
 describe('ageEarthInputCalc', () => {
-  // test('determine if the number entered is not a number', () => {
-  //   let ageEarthCalcTest = ageEarthInputCalc('age');
-  //   expect(ageEarthCalcTest).toEqual(false);
-  // });
-  // test('determine if the number entered is an number', () => {
-  //   let ageEarthCalcTest2 = ageEarthInputCalc(40);
-  //   expect(ageEarthCalcTest2).toEqual(true);
-  // });
   test('determine if mercury age calculates correctly', () => {
     let ageMercuryCalcTest = ageMercuryCalc(20);
     expect(ageMercuryCalcTest).toEqual(83);
@@ -33,13 +25,16 @@ describe('PlanetAge', () => {
   });
   test('folding in input verify number function to class', () => {
     let planetAgeTest3 = new PlanetAge(20);
-    console.log(planetAgeTest3.inputAge);
     expect (planetAgeTest3.checkInput()).toEqual(true);
   });
-  test('test if mars calculation is correct and stored correctly', () => {
+  test('test if mars calculation is correct', () => {
     let marsAgeTest = new PlanetAge(20);
-    console.log(marsAgeTest.inputAge);
+    console.log(marsAgeTest.marsAge);
     expect (marsAgeTest.calcAges()).toEqual(83);
+  });
+  test('test if mars calculation is stored correctly', () => {
+    let marsAgeTest2 = new PlanetAge(20);
+    expect (marsAgeTest2.marsAge).toEqual(83);
   });
 
 
