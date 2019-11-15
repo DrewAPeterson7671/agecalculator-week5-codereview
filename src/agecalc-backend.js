@@ -26,12 +26,22 @@ let ageEarthInputCalc = function(inputAge) {
 
 class PlanetAge {
   constructor(inputAge) {
-    this.inputAge;
+    this.inputAge = inputAge;
     this.mercuryAge;
     this.venusAge;
     this.marsAge;
     this.jupiterAge;
   }
+  checkInput() {
+    if (typeof(inputAge) !== 'number') {
+      return false;
+    } else if (typeof(inputAge) === 'number') {
+      return true;
+    } else {
+      console.log('input type error');
+    }
+  }
+
   // calcAge() {
   //   let mercuryAgeageMercuryCalc = Math.round(inputAge / mercuryFactor);
   //   this.mercuryAge = mercuryAgeageMercuryCalc;

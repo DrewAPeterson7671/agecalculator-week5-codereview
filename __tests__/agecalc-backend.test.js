@@ -27,4 +27,9 @@ describe('PlanetAge', () => {
     let planetAgeTest = new PlanetAge(20);
     expect (planetAgeTest.inputAge).toEqual(20);
   });
+  test('folding in input function to class', () => {
+    let planetAgeTest2 = new PlanetAge('age');
+    expect (planetAgeTest2.checkInput()).toEqual(false);
+
+  });
 });
