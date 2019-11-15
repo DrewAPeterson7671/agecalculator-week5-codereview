@@ -1,7 +1,4 @@
-
 export { PlanetAge }
-
-
 
 // business logic
 
@@ -9,6 +6,7 @@ const mercuryFactor = .24;
 const venusFactor = .62;
 const marsFactor = 1.88;
 const jupiterFactor = 11.86;
+const earthExpectancyFactor = 78;
 
 
 class PlanetAge {
@@ -18,6 +16,11 @@ class PlanetAge {
     this.venusAge = 0;
     this.marsAge = 0;
     this.jupiterAge = 0;
+    this.earthExpectancy = 0;
+    this.mercuryExpectancy = 0;
+    this.venusExpectancy = 0;
+    this.marsExpectancy = 0;
+    this.jupiterExpectancy = 0;
   }
   checkInput() {
     if (typeof(this.inputAge) !== 'number') {
@@ -44,19 +47,10 @@ class PlanetAge {
     this.jupiterAge = Math.floor(this.inputAge / jupiterFactor);
     return this.jupiterAge;
   }
+  calcExpectancyEarth() {
+    this.earthExpectancy = Math.floor(this.inputAge - earthExpectancyFactor);
+    return 0;
+  }
 
 
 };
-
-
-
-
-// function ageMercuryCalc(inputAge) {
-//   let mercuryAge = Math.round(inputAge / mercuryFactor);
-//   return mercuryAge;
-// }
-//
-// function ageVenusCalc(inputAge) {
-//   let venusAge = Math.round(inputAge / venusFactor);
-//   return venusAge;
-// }

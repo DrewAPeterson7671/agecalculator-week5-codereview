@@ -16,7 +16,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 | Calculates Venus age | 20 | 32 |
 | Calculates Mars age | 20 | 10 |
 | Calculates Jupiter age | 20 | 1 |
-| Calculates expected Earth life expectancy years remaining | 34 | - |
+| Calculates expected Earth life expectancy years remaining | 30 | 48 |
 | Calculates expected Mercury life expectancy years remaining | 34 | - |
 | Calculates expected Venus life expectancy years remaining | 34 | - |
 | Calculates expected Mars life expectancy years remaining | 34 | - |
