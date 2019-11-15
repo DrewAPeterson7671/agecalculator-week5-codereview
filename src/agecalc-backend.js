@@ -48,8 +48,8 @@ class PlanetAge {
     return this.jupiterAge;
   }
   calcExpectancyEarth() {
-    this.earthExpectancy = Math.floor(this.inputAge - earthExpectancyFactor);
-    return 0;
+    this.earthExpectancy = Math.floor(earthExpectancyFactor - this.inputAge);
+    return this.earthExpectancy;
   }
 
 
