@@ -23,11 +23,19 @@ let ageEarthInputCalc = function(inputAge) {
 
 /// object to build up to
 
-function PlanetAge(inputAge) {
-
-  this.earthAge = inputAge;
-  this.mercuryAge = inputAge / mercuryFactor;
-}
+class PlanetAge {
+  constructor(inputAge) {
+    this.inputAge;
+    this.mercuryAge;
+    this.venusAge;
+    this.marsAge;
+    this.jupiterAge;
+  }
+  calcAge() {
+    let mercuryAgeageMercuryCalc = Math.round(inputAge / mercuryFactor);
+    this.mercuryAge = mercuryAgeageMercuryCalc;
+  }
+};
 
 
 function ageMercuryCalc(inputAge) {
@@ -37,5 +45,5 @@ function ageMercuryCalc(inputAge) {
 
 function ageVenusCalc(inputAge) {
   let venusAge = Math.round(inputAge / venusFactor);
-  return venusAge;
+  return venusAge.toPrecision();
 }
