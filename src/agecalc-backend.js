@@ -1,6 +1,7 @@
 export { ageEarthInputCalc }
 export { ageMercuryCalc }
 export { ageVenusCalc }
+export { PlanetAge }
 
 
 
