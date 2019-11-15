@@ -26,6 +26,9 @@ describe('PlanetAge', () => {
     let calcMarsTest = new PlanetAge(20);
     expect (calcMarsTest.calcMars()).toEqual(10);
   });
-
+  test('test if jupiter calculation is correct', () => {
+    let calcJupiterTest = new PlanetAge(20);
+    expect (calcJupiterTest.calcJupiter()).toEqual(1);
+  });
 
 });
