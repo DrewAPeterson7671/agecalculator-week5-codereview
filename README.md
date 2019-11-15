@@ -13,7 +13,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 | Behavior | Input Example | Output Example |
 | Input of age is integer | 34 | 34 |
 | Calculates Mercury age | 20 | 83 |
-| Calculates Venus age | 34 | - |
+| Calculates Venus age | 24 | 38 |
 | Calculates Mars age | 34 | - |
 | Calculates Jupiter age | 34 | - |
 | Calculates expected Earth life expectancy years remaining | 34 | - |
