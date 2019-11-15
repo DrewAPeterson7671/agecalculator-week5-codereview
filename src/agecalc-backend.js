@@ -28,9 +28,13 @@ class PlanetAge {
       console.log('input type error');
     }
   }
-  calcAges() {
+  calcMerc() {
     this.mercuryAge = Math.round(this.inputAge / mercuryFactor);
     return this.mercuryAge;
+  }
+  calcVen() {
+    this.venusAge = Math.round(this.inputAge / mercuryFactor);
+    return this.venusAge;
   }
 };
 
