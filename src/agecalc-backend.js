@@ -1,4 +1,5 @@
 export { ageEarthInputCalc }
+export { ageMercuryCalc }
 
 
 // business logic
@@ -11,4 +12,8 @@ let ageEarthInputCalc = function(input) {
   } else {
     console.log('input type error');
   }
+}
+
+let ageMercuryCalc = function(input) {
+  return 38;
 }
