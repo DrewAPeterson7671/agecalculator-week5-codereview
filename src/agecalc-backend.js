@@ -33,9 +33,9 @@ class PlanetAge {
     this.jupiterAge;
   }
   checkInput() {
-    if (typeof(inputAge) !== 'number') {
+    if (typeof(this.inputAge) !== 'number') {
       return false;
-    } else if (typeof(inputAge) === 'number') {
+    } else if (typeof(this.inputAge) === 'number') {
       return true;
     } else {
       console.log('input type error');
