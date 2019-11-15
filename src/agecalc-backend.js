@@ -33,9 +33,10 @@ class PlanetAge {
     return this.mercuryAge;
   }
   calcVen() {
-    this.venusAge = Math.round(this.inputAge / mercuryFactor);
+    this.venusAge = Math.round(this.inputAge / venusFactor);
     return this.venusAge;
   }
+  
 };
 
 
