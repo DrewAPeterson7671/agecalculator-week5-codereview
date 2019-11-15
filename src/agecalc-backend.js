@@ -29,15 +29,15 @@ class PlanetAge {
     }
   }
   calcMerc() {
-    this.mercuryAge = Math.round(this.inputAge / mercuryFactor);
+    this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
     return this.mercuryAge;
   }
   calcVen() {
-    this.venusAge = Math.round(this.inputAge / venusFactor);
+    this.venusAge = Math.floor(this.inputAge / venusFactor);
     return this.venusAge;
   }
   calcMars() {
-    this.marsAge = Math.round(this.inputAge / venusFactor);
+    this.marsAge = Math.floor(this.inputAge / marsFactor);
     return this.marsAge;
   }
 };
