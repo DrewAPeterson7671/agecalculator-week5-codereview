@@ -11,7 +11,17 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 ## Behavior Driven Development
 
 | Behavior | Input Example | Output Example |
-| - | - | - |
+| Input of age is integer | 34 | 34 |
+| Calculates Mercury age | 34 | - |
+| Calculates Venus age | 34 | - |
+| Calculates Mars age | 34 | - |
+| Calculates Jupiter age | 34 | - |
+| Calculates expected Earth life expectancy years remaining | 34 | - |
+| Calculates expected Mercury life expectancy years remaining | 34 | - |
+| Calculates expected Venus life expectancy years remaining | 34 | - |
+| Calculates expected Mars life expectancy years remaining | 34 | - |
+| Calculates expected Jupiter life expectancy years remaining | 34 | - |
+| Calculates if past life expectancy, return years they have lived past | 34 | - |
 
 ## Github Link
 {[Github link to project](https://drewapeterson7671.github.io/week-1-code-review/index.html)}
