@@ -20,8 +20,16 @@ let ageEarthInputCalc = function(inputAge) {
   }
 }
 
+/// object to build up to
+
 function PlanetAge(inputAge) {
-  const mercuryFactor = .24;
+
   this.earthAge = inputAge;
   this.mercuryAge = inputAge / mercuryFactor;
+}
+
+
+function ageMercuryCalc(inputAge) {
+  let mercuryAge = Math.round(inputAge / mercuryFactor);
+  return mercuryAge;
 }
