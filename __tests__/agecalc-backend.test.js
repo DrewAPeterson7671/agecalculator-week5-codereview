@@ -1,7 +1,7 @@
 import { ageEarthInputCalc } from './../src/agecalc-backend.js';
 import { ageMercuryCalc } from './../src/agecalc-backend.js';
 import { ageVenusCalc } from './../src/agecalc-backend.js';
-import { Triangle } from  './../src/agecalc-backend.js';
+import { PlanetAge } from  './../src/agecalc-backend.js';
 
 describe('ageEarthInputCalc', () => {
   test('determine if the number entered is not a number', () => {
@@ -17,14 +17,14 @@ describe('ageEarthInputCalc', () => {
     expect(ageMercuryCalcTest).toEqual(83);
   });
   test('determine if mercury age calculates correctly', () => {
-    let ageVenusCalcTest = ageVenusCalc(24);
-    expect(ageVenusCalcTest).toEqual(38);
+    let ageVenusCalcTest = ageVenusCalc(20);
+    expect(ageVenusCalcTest).toEqual(32);
   });
 });
 
 describe('PlanetAge', () => {
   test('to determine if object is loading input age correctly', () => {
-    let planetAge = new PlanetAge(20);
-    expect (planetAge.inputAge).toEqual(20);
+    let planetAgeTest = new PlanetAge(20);
+    expect (planetAgeTest.inputAge).toEqual(20);
   });
 });

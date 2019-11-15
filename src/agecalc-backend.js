@@ -32,10 +32,10 @@ class PlanetAge {
     this.marsAge;
     this.jupiterAge;
   }
-  calcAge() {
-    let mercuryAgeageMercuryCalc = Math.round(inputAge / mercuryFactor);
-    this.mercuryAge = mercuryAgeageMercuryCalc;
-  }
+  // calcAge() {
+  //   let mercuryAgeageMercuryCalc = Math.round(inputAge / mercuryFactor);
+  //   this.mercuryAge = mercuryAgeageMercuryCalc;
+  // }
 };
 
 
@@ -46,5 +46,5 @@ function ageMercuryCalc(inputAge) {
 
 function ageVenusCalc(inputAge) {
   let venusAge = Math.round(inputAge / venusFactor);
-  return venusAge.toPrecision();
+  return venusAge;
 }
