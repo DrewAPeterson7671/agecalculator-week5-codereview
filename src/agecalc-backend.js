@@ -1,6 +1,4 @@
-// export { ageEarthInputCalc }
-export { ageMercuryCalc }
-export { ageVenusCalc }
+
 export { PlanetAge }
 
 
@@ -31,19 +29,20 @@ class PlanetAge {
     }
   }
   calcAges() {
-    return this.mercuryAge = Math.round(this.inputAge / mercuryFactor);
-    console(this.mercuryAge);
+    this.mercuryAge = Math.round(this.inputAge / mercuryFactor);
+    return this.mercuryAge;
   }
+};
 
 
 
 
-function ageMercuryCalc(inputAge) {
-  let mercuryAge = Math.round(inputAge / mercuryFactor);
-  return mercuryAge;
-}
-
-function ageVenusCalc(inputAge) {
-  let venusAge = Math.round(inputAge / venusFactor);
-  return venusAge;
-}
+// function ageMercuryCalc(inputAge) {
+//   let mercuryAge = Math.round(inputAge / mercuryFactor);
+//   return mercuryAge;
+// }
+//
+// function ageVenusCalc(inputAge) {
+//   let venusAge = Math.round(inputAge / venusFactor);
+//   return venusAge;
+// }
