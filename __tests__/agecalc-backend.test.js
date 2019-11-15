@@ -22,7 +22,10 @@ describe('PlanetAge', () => {
     let venusAgeTest = new PlanetAge(20);
     expect (venusAgeTest.calcVen()).toEqual(32);
   });
-
+  test('test if mars calculation is correct', () => {
+    let calcMarsTest = new PlanetAge(20);
+    expect (calcMarsTest.calcMars()).toEqual(10);
+  });
 
 
 });
