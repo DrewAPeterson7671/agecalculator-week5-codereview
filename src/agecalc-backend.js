@@ -40,7 +40,7 @@ class PlanetAge {
     } else {
       console.log('input life exp error');
     }
-  }  
+  }
   calcMerc() {
     this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
     return this.mercuryAge;
@@ -65,5 +65,7 @@ class PlanetAge {
     this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
     return this.mercuryAge;
   }
+  
+
 
 };

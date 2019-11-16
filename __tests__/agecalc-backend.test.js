@@ -46,4 +46,5 @@ describe('PlanetAge', () => {
     let expectAgeTest = new PlanetAge(20, 78);
     expect (expectAgeTest.checkInputExpect()).toEqual(true);
   });
+  
 });
