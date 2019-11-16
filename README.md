@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _Super Galactic Age Calculator_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Calculates your age on different planets, 11/15/2019_
 
-#### By _**{List of contributors}**_
+#### By _**Drew Peterson**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This application will calculate your age on Mercury, Venus, Mars and Juptier as well as your life expectancy on those planets._
 
 ## Behavior Driven Development
 
@@ -23,22 +23,17 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 | Calculates expected Jupiter life expectancy years remaining | 34 | - |
 | Calculates if past life expectancy, return years they have lived past | 34 | - |
 
-## Github Link
-{[Github link to project](https://drewapeterson7671.github.io/week-1-code-review/index.html)}
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Download Repository_
+* _From terminal, navigate to the repository root directory and type "npm run build" (ignore the quotes)_
+* _Open in a web browser, Chrome is recommended_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_There are no knonw bugs at this time._
 
 ## Support and contact details
 
@@ -46,12 +41,12 @@ _Please contact me directly via email at drew.a.peterson@hotmail.com with any bu
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out}_
+_HTML 5, JavaScript, Webpack, Boostrap, jQuery, Jest_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing,  MIT or GPL.}*
+*GPL.}*
 
 
 
-Copyright (c) 2019 **_{List of contributors or company name}_**
+Copyright (c) 2019 **_Drew Peterson_**
