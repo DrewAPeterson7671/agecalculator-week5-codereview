@@ -38,12 +38,12 @@ describe('PlanetAge', () => {
     let expectAgeTest2 = new PlanetAge('age');
     expect (expectAgeTest2.checkInputExpect()).toEqual(false);
   });
-  test('folding in input life expect type function to class', () => {
-    let expectAgeTest2 = new PlanetAge('age');
+  test('checking life expectancy input to class to test input type', () => {
+    let expectAgeTest2 = new PlanetAge(20,'age');
     expect (expectAgeTest2.checkInputExpect()).toEqual(false);
   });
-  test('folding in input verify number function to class', () => {
-    let expectAgeTest = new PlanetAge(20);
+  test('checking life expectancy input to class to test input is number', () => {
+    let expectAgeTest = new PlanetAge(20, 78);
     expect (expectAgeTest.checkInputExpect()).toEqual(true);
   });
 });
