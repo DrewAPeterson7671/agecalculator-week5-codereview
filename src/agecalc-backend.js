@@ -10,8 +10,9 @@ const earthExpectancyFactor = 78;
 
 
 class PlanetAge {
-  constructor(inputAge) {
+  constructor(inputAge,lifeExpectInput) {
     this.inputAge = inputAge;
+    this.lifeExpect = lifeExpectInput;
     this.mercuryAge = 0;
     this.venusAge = 0;
     this.marsAge = 0;
@@ -28,9 +29,18 @@ class PlanetAge {
     } else if (typeof(this.inputAge) === 'number') {
       return true;
     } else {
-      console.log('input type error');
+      console.log('input age type error');
     }
   }
+  checkInputExpect() {
+    if (typeof(this.lifeExpect) !== 'number') {
+      return false;
+    } else if (typeof(this.lifeExpect) === 'number') {
+      return true;
+    } else {
+      console.log('input life exp error');
+    }
+  }  
   calcMerc() {
     this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
     return this.mercuryAge;
@@ -51,6 +61,9 @@ class PlanetAge {
     this.earthExpectancy = Math.floor(earthExpectancyFactor - this.inputAge);
     return this.earthExpectancy;
   }
-
+  calcMerc() {
+    this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
+    return this.mercuryAge;
+  }
 
 };
