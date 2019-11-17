@@ -57,19 +57,20 @@ class PlanetAge {
     this.jupiterAge = Math.floor(this.inputAge / jupiterFactor);
     return this.jupiterAge;
   }
-  // calcExpectancyEarth() {
-  //   let earthExpectancyBranch = Math.floor(this.lifeExpectInput - this.inputAge);
-  //   if (earthExpectancyBranch < 0) {
-  //     this.earthExpectancy = `You have lived ${earthExpectancyBranch * -1} longer than your life expectancy!  Congratulations!`;
-  //   } else if (earthExpectancyBranch = 0) {
-  //     this.earthExpectancy = `You have arrived at your life expectancy of ${lifeExpectInput}! Perhaps you should sit down for a minute and take it in.`;
-  //   } else if (earthExpectancyBranch > 0) {
-  //     this.earthExpectancy = `You can totally bank on at least ${earthExpectancyBranch} more years of life!  I mean...  you know...  probably!`
-  //   } else {
-  //     console.log("Earth Age Expectancy is failing!");
-  //   }
-  //   return this.earthExpectancy;
-  // }
+  calcExpectancyEarth() {
+    let earthExpectancyBranch = Math.floor(this.lifeExpect - this.inputAge);
+    this.earthExpectancy = earthExpectancyBranch;
+    // if (earthExpectancyBranch < 0) {
+    //   this.earthExpectancy = `You have lived ${earthExpectancyBranch * -1} longer than your life expectancy!  Congratulations!`;
+    // } else if (earthExpectancyBranch = 0) {
+    //   this.earthExpectancy = `You have arrived at your life expectancy of ${lifeExpectInput}! Perhaps you should sit down for a minute and take it in.`;
+    // } else if (earthExpectancyBranch > 0) {
+    //   this.earthExpectancy = `You can totally bank on at least ${earthExpectancyBranch} more years of life!  I mean...  you know...  probably!`
+    // } else {
+    //   console.log("Earth Age Expectancy is failing!");
+    // }
+    return this.earthExpectancy;
+  }
 
 
 

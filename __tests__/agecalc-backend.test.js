@@ -34,10 +34,10 @@ describe('PlanetAge', () => {
     let expectAgeTest = new PlanetAge(20, 78);
     expect (expectAgeTest.checkInputExpect()).toEqual(true);
   });
-  // test('test if earth life expectancy is correct', () => {
-  //   let earthExpectancyTest = new PlanetAge(30, 78);
-  //   expect (earthExpectancyTest.calcExpectancyEarth()).toEqual(48);
-  // });
+  test('test if earth life expectancy is correct', () => {
+    let earthExpectancyTest = new PlanetAge(30, 78);
+    expect (earthExpectancyTest.calcExpectancyEarth()).toEqual(58);
+  });
   // test('checking earth life expectancy output', () => {
   //   let expectAgeTest2 = new PlanetAge(20, 78);
   //   expect (expectAgeTest.calcExpectancyEarth()).toEqual("You can totally bank on at least 50 more years of life!  I mean...  you know...  probably!");
