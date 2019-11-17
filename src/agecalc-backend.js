@@ -69,11 +69,13 @@ class PlanetAge {
   //   return this.mercuryAge;
   // }
   assignAges() {
-    this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
-    this.venusAge = Math.floor(this.inputAge / venusFactor);
-    this.marsAge = Math.floor(this.inputAge / marsFactor);
-    this.jupiterAge = Math.floor(this.inputAge / jupiterFactor);
-    return true;
+    let mercuryCalc = Math.floor(this.inputAge / mercuryFactor);
+    // let venusCalc = Math.floor(this.inputAge / venusFactor);
+    // let marsCalc = Math.floor(this.inputAge / marsFactor);
+    // let jupiterCalc = Math.floor(this.inputAge / jupiterFactor);
+    return planetAges = {
+      mercuryAge: mercuryCalc
+    };
   }
 
 

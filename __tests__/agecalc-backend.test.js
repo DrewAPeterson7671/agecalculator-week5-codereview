@@ -20,8 +20,7 @@ describe('PlanetAge', () => {
   });
   test('test if mercury calculation is correct', () => {
     let mercuryAgeTest = new PlanetAge(20);
-    console.log(mercuryAgeTest);
-    expect (mercuryAgeTest.mercuryAge).toEqual(83);
+    expect (mercuryAgeTest.assignAges()).toEqual(20);
   });
 
 
