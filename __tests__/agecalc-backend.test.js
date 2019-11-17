@@ -71,6 +71,6 @@ describe('PlanetAge', () => {
   test('jupiter life expectancy calc', () => {
     let expectJupiterTest = new PlanetAge(34, 78);
     expectJupiterTest.calcExpectancyEarth();
-    expect (expectJupiterTest.expectJupiter()).toEqual(23);
+    expect (expectJupiterTest.expectJupiter()).toEqual(3);
   });
 });
