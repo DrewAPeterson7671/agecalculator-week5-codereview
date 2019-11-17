@@ -40,7 +40,7 @@ describe('PlanetAge', () => {
   });
   test('checking earth life expectancy string handles a person older than', () => {
     let expectAgeTest2 = new PlanetAge(82, 78);
-    expect (expectAgeTest2.expectancyBranching()).toEqual("You have lived 3 longer than your life expectancy!  Congratulations!");
+    expect (expectAgeTest2.expectancyBranching()).toEqual("You have lived 4 longer than your life expectancy!  Congratulations!");
   });
 
 
