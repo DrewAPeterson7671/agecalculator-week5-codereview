@@ -18,6 +18,7 @@ class PlanetAge {
     this.marsAge = 0;
     this.jupiterAge = 0;
     this.earthExpectancy = 0;
+    this.earthExpectancyString = "";
     this.mercuryExpectancy = 0;
     this.venusExpectancy = 0;
     this.marsExpectancy = 0;
@@ -61,18 +62,18 @@ class PlanetAge {
     this.earthExpectancy = Math.floor(this.lifeExpect - this.inputAge);
     return this.earthExpectancy;
   }
-  // expectancyBranching() {
-  //   if (earthExpectancyBranch < 0) {
-  //     this.earthExpectancy = `You have lived ${earthExpectancyBranch * -1} longer than your life expectancy!  Congratulations!`;
-  //   // } else if (earthExpectancyBranch = 0) {
-  //   //   this.earthExpectancy = `You have arrived at your life expectancy of ${lifeExpectInput}! Perhaps you should sit down for a minute and take it in.`;
-  //   // } else if (earthExpectancyBranch > 0) {
-  //   //   this.earthExpectancy = `You can totally bank on at least ${earthExpectancyBranch} more years of life!  I mean...  you know...  probably!`
-  //   } else {
-  //     console.log("Earth Age Expectancy is failing!");
-  //   }
-  //   return this.earthExpectancy;
-  // }
+  expectancyBranching() {
+    // if (this.earthExpectancy < 0) {
+      this.earthExpectancyString = `You have lived ${this.earthExpectancy * -1} longer than your life expectancy!  Congratulations!`;
+    // } else if (this.earthExpectancy = 0) {
+    //   this.earthExpectancyString = `You have arrived at your life expectancy of ${lifeExpectInput}! Perhaps you should sit down for a minute and take it in.`;
+    // } else if (this.earthExpectancy > 0) {
+    //   this.earthExpectancyString = `You can totally bank on at least ${earthExpectancy} more years of life!  I mean...  you know...  probably!`
+    // } else {
+    //   console.log("Earth Age Expectancy is failing!");
+    // }
+    return this.earthExpectancyString;
+  }
 
 
 
