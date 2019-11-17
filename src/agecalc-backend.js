@@ -73,8 +73,8 @@ class PlanetAge {
     // let venusCalc = Math.floor(this.inputAge / venusFactor);
     // let marsCalc = Math.floor(this.inputAge / marsFactor);
     // let jupiterCalc = Math.floor(this.inputAge / jupiterFactor);
-    return planetAges = {
-      mercuryAge: mercuryCalc
+    return this.planetAges = {
+      mercuryAge: mercuryCalc,
     };
   }
 

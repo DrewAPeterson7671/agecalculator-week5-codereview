@@ -14,12 +14,9 @@ describe('PlanetAge', () => {
     let planetAgeTest3 = new PlanetAge(20);
     expect (planetAgeTest3.checkInput()).toEqual(true);
   });
-  test('test if assign ages function is returning true', () => {
-    let assignAgesTest = new PlanetAge(20);
-    expect (assignAgesTest.assignAges()).toEqual(true);
-  });
   test('test if mercury calculation is correct', () => {
     let mercuryAgeTest = new PlanetAge(20);
+    console.log(mercuryAgeTest);
     expect (mercuryAgeTest.assignAges()).toEqual(20);
   });
 
