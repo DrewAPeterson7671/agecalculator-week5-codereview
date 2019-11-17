@@ -86,7 +86,10 @@ class PlanetAge {
     this.marsExpectancy = Math.floor(this.earthExpectancy / marsFactor);
     return this.marsExpectancy;
   }
-
+  expectJupiter() {
+    this.jupiterExpectancy = Math.floor(this.earthExpectancy / jupiterFactor);
+    return this.jupiterExpectancy;
+  }
 
   // if (this.earthExpectancy < 0) {
   //   this.earthExpectancyString = `You have lived ${this.earthExpectancy * -1} longer than your life expectancy!  Congratulations! This is how much older you are on these planets:
