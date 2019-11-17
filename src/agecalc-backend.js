@@ -2,8 +2,8 @@ export { PlanetAge }
 
 // business logic
 
-const planetAgeFactors = [.24, .62, 1.88, 11.86];
-const loopObjectIndex = ["mercuryAge", "venusAge", "marsAge", "jupiterAge"];
+// const planetAgeFactors = [.24, .62, 1.88, 11.86];
+// const loopObjectProperties = ["mercuryAge", "venusAge", "marsAge", "jupiterAge"];
 
 const mercuryFactor = .24;
 const venusFactor = .62;
@@ -64,12 +64,16 @@ class PlanetAge {
     this.earthExpectancy = Math.floor(earthExpectancyFactor - this.inputAge);
     return this.earthExpectancy;
   }
-  calcMerc() {
+  // calcMerc() {
+  //   this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
+  //   return this.mercuryAge;
+  // }
+  assignAges() {
     this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
-    return this.mercuryAge;
-  }
-  loopCalcAge() {
-    
+    this.venusAge = Math.floor(this.inputAge / venusFactor);
+    this.marsAge = Math.floor(this.inputAge / marsFactor);
+    this.jupiterAge = Math.floor(this.inputAge / jupiterFactor);
+    return true;
   }
 
 
