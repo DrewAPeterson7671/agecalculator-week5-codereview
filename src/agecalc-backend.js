@@ -44,22 +44,22 @@ class PlanetAge {
       console.log('input life exp error');
     }
   }
-  // calcMerc() {
-  //   this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
-  //   return this.mercuryAge;
-  // }
-  // calcVen() {
-  //   this.venusAge = Math.floor(this.inputAge / venusFactor);
-  //   return this.venusAge;
-  // }
-  // calcMars() {
-  //   this.marsAge = Math.floor(this.inputAge / marsFactor);
-  //   return this.marsAge;
-  // }
-  // calcJupiter() {
-  //   this.jupiterAge = Math.floor(this.inputAge / jupiterFactor);
-  //   return this.jupiterAge;
-  // }
+  calcMerc() {
+    this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
+    return this.mercuryAge;
+  }
+  calcVen() {
+    this.venusAge = Math.floor(this.inputAge / venusFactor);
+    return this.venusAge;
+  }
+  calcMars() {
+    this.marsAge = Math.floor(this.inputAge / marsFactor);
+    return this.marsAge;
+  }
+  calcJupiter() {
+    this.jupiterAge = Math.floor(this.inputAge / jupiterFactor);
+    return this.jupiterAge;
+  }
   calcExpectancyEarth() {
     this.earthExpectancy = Math.floor(earthExpectancyFactor - this.inputAge);
     return this.earthExpectancy;
@@ -68,15 +68,7 @@ class PlanetAge {
   //   this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
   //   return this.mercuryAge;
   // }
-  assignAges() {
-    let mercuryCalc = Math.floor(this.inputAge / mercuryFactor);
-    // let venusCalc = Math.floor(this.inputAge / venusFactor);
-    // let marsCalc = Math.floor(this.inputAge / marsFactor);
-    // let jupiterCalc = Math.floor(this.inputAge / jupiterFactor);
-    return this.planetAges = {
-      mercuryAge: mercuryCalc,
-    };
-  }
+
 
 
 };
