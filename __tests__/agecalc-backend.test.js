@@ -61,7 +61,7 @@ describe('PlanetAge', () => {
   test('venus life expectancy calc', () => {
     let expectVenusTest = new PlanetAge(34, 78);
     expectVenusTest.calcExpectancyEarth();
-    expect (expectVenusTest.expectVenus()).toEqual(69);
+    expect (expectVenusTest.expectVenus()).toEqual(70);
   });
 
 
