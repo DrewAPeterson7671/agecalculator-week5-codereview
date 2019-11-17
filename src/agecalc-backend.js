@@ -2,6 +2,9 @@ export { PlanetAge }
 
 // business logic
 
+const planetAgeFactors = [.24, .62, 1.88, 11.86];
+const loopObjectIndex = ["mercuryAge", "venusAge", "marsAge", "jupiterAge"];
+
 const mercuryFactor = .24;
 const venusFactor = .62;
 const marsFactor = 1.88;
@@ -41,22 +44,22 @@ class PlanetAge {
       console.log('input life exp error');
     }
   }
-  calcMerc() {
-    this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
-    return this.mercuryAge;
-  }
-  calcVen() {
-    this.venusAge = Math.floor(this.inputAge / venusFactor);
-    return this.venusAge;
-  }
-  calcMars() {
-    this.marsAge = Math.floor(this.inputAge / marsFactor);
-    return this.marsAge;
-  }
-  calcJupiter() {
-    this.jupiterAge = Math.floor(this.inputAge / jupiterFactor);
-    return this.jupiterAge;
-  }
+  // calcMerc() {
+  //   this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
+  //   return this.mercuryAge;
+  // }
+  // calcVen() {
+  //   this.venusAge = Math.floor(this.inputAge / venusFactor);
+  //   return this.venusAge;
+  // }
+  // calcMars() {
+  //   this.marsAge = Math.floor(this.inputAge / marsFactor);
+  //   return this.marsAge;
+  // }
+  // calcJupiter() {
+  //   this.jupiterAge = Math.floor(this.inputAge / jupiterFactor);
+  //   return this.jupiterAge;
+  // }
   calcExpectancyEarth() {
     this.earthExpectancy = Math.floor(earthExpectancyFactor - this.inputAge);
     return this.earthExpectancy;
@@ -65,7 +68,9 @@ class PlanetAge {
     this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
     return this.mercuryAge;
   }
-  
+  loopCalcAge() {
+    
+  }
 
 
 };
