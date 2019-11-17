@@ -17,7 +17,7 @@ _This application will calculate your age on Mercury, Venus, Mars and Jupiter as
 | Calculates Venus age | 20 | 32 |
 | Calculates Mars age | 20 | 10 |
 | Calculates Jupiter age | 20 | 1 |
-| Calculates expected Earth life expectancy years remaining | 30 | 48 |
+| Calculates expected Earth life expectancy years remaining | 30, 78 | 48 |
 | Calculates expected Mercury life expectancy years remaining | 34 | - |
 | Calculates expected Venus life expectancy years remaining | 34 | - |
 | Calculates expected Mars life expectancy years remaining | 34 | - |

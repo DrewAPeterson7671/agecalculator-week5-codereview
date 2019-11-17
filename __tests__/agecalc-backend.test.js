@@ -27,7 +27,7 @@ describe('PlanetAge', () => {
     expect (calcJupiterTest.calcJupiter()).toEqual(1);
   });
   test('test if earth life expectancy is correct', () => {
-    let earthExpectancyTest = new PlanetAge(30);
+    let earthExpectancyTest = new PlanetAge(30, 78);
     expect (earthExpectancyTest.calcExpectancyEarth()).toEqual(48);
   });
   test('folding in input life expect type function to class', () => {
@@ -40,7 +40,11 @@ describe('PlanetAge', () => {
   });
   test('checking life expectancy input to class to test input is number', () => {
     let expectAgeTest = new PlanetAge(20, 78);
-    expect (expectAgeTest.checkInputExpect()).toEqual(true);
+    expect (expectAgeTest.checkInputExpect()).toEqual(58);
   });
+  // test('checking earth life expectancy output', () => {
+  //   let expectAgeTest2 = new PlanetAge(20, 78);
+  //   expect (expectAgeTest.calcExpectancyEarth()).toEqual("You can totally bank on at least 50 more years of life!  I mean...  you know...  probably!");
+  // });
 
 });

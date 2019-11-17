@@ -2,18 +2,15 @@ export { PlanetAge }
 
 // business logic
 
-// const planetAgeFactors = [.24, .62, 1.88, 11.86];
-// const loopObjectProperties = ["mercuryAge", "venusAge", "marsAge", "jupiterAge"];
-
 const mercuryFactor = .24;
 const venusFactor = .62;
 const marsFactor = 1.88;
 const jupiterFactor = 11.86;
-const earthExpectancyFactor = 78;
+
 
 
 class PlanetAge {
-  constructor(inputAge,lifeExpectInput) {
+  constructor(inputAge, lifeExpectInput) {
     this.inputAge = inputAge;
     this.lifeExpect = lifeExpectInput;
     this.mercuryAge = 0;
@@ -60,14 +57,20 @@ class PlanetAge {
     this.jupiterAge = Math.floor(this.inputAge / jupiterFactor);
     return this.jupiterAge;
   }
-  calcExpectancyEarth() {
-    this.earthExpectancy = Math.floor(earthExpectancyFactor - this.inputAge);
-    return this.earthExpectancy;
-  }
-  // calcMerc() {
-  //   this.mercuryAge = Math.floor(this.inputAge / mercuryFactor);
-  //   return this.mercuryAge;
+  // calcExpectancyEarth() {
+  //   let earthExpectancyBranch = Math.floor(this.lifeExpectInput - this.inputAge);
+  //   if (earthExpectancyBranch < 0) {
+  //     this.earthExpectancy = `You have lived ${earthExpectancyBranch * -1} longer than your life expectancy!  Congratulations!`;
+  //   } else if (earthExpectancyBranch = 0) {
+  //     this.earthExpectancy = `You have arrived at your life expectancy of ${lifeExpectInput}! Perhaps you should sit down for a minute and take it in.`;
+  //   } else if (earthExpectancyBranch > 0) {
+  //     this.earthExpectancy = `You can totally bank on at least ${earthExpectancyBranch} more years of life!  I mean...  you know...  probably!`
+  //   } else {
+  //     console.log("Earth Age Expectancy is failing!");
+  //   }
+  //   return this.earthExpectancy;
   // }
+
 
 
 
