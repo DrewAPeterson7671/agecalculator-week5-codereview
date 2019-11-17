@@ -82,7 +82,10 @@ class PlanetAge {
     this.venusExpectancy = Math.floor(this.earthExpectancy / venusFactor);
     return this.venusExpectancy;
   }
-
+  expectMars() {
+    this.marsExpectancy = Math.floor(this.earthExpectancy / marsFactor);
+    return this.marsExpectancy;
+  }
 
 
   // if (this.earthExpectancy < 0) {
