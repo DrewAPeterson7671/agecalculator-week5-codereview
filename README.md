@@ -6,11 +6,12 @@
 
 ## Description
 
-_This application will calculate your age on Mercury, Venus, Mars and Juptier as well as your life expectancy on those planets._
+_This application will calculate your age on Mercury, Venus, Mars and Jupiter as well as your life expectancy on those planets._
 
 ## Behavior Driven Development
 
 | Behavior | Input Example | Output Example |
+| - | - | - |
 | Input of age is integer | 34 | 34 |
 | Calculates Mercury age | 20 | 83 |
 | Calculates Venus age | 20 | 32 |
@@ -27,7 +28,9 @@ _This application will calculate your age on Mercury, Venus, Mars and Juptier as
 ## Setup/Installation Requirements
 
 * _Download Repository_
-* _From terminal, navigate to the repository root directory and type "npm run build" (ignore the quotes)_
+* _From terminal, navigate to the repository root directory._
+* _Type in at the terminal, the command "npm install" (ignore the quotes when typing)._
+* _Type in at the terminal, the command "npm run build" (ignore the quotes when typing)._
 * _Open in a web browser, Chrome is recommended_
 
 
