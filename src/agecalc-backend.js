@@ -66,10 +66,10 @@ class PlanetAge {
     this.earthExpectancy = Math.floor(this.lifeExpect - this.inputAge);
     if (this.earthExpectancy < 0) {
       this.earthExpectancyString = `You have lived ${this.earthExpectancy * -1} longer than your life expectancy!  Congratulations!`;
-    // } else if (this.earthExpectancy = 0) {
-    //   this.earthExpectancyString = `You have arrived at your life expectancy of ${lifeExpectInput}! Perhaps you should sit down for a minute and take it in.`;
+    } else if (this.earthExpectancy === 0) {
+      this.earthExpectancyString = `You have arrived at your life expectancy of ${this.lifeExpect}! Perhaps you should sit down for a minute and take it in.`;
     // } else if (this.earthExpectancy > 0) {
-    //   this.earthExpectancyString = `You can totally bank on at least ${earthExpectancy} more years of life!  I mean...  you know...  probably!`
+    //   this.earthExpectancyString = `You can totally bank on at least ${this.earthExpectancy} more years of life!  I mean...  you know...  probably!`
     } else {
       console.log("Earth Age Expectancy is failing!");
     }
