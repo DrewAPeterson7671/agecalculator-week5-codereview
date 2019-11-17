@@ -63,7 +63,6 @@ class PlanetAge {
     return this.earthExpectancy;
   }
   expectancyBranching() {
-    this.earthExpectancy = Math.floor(this.lifeExpect - this.inputAge);
     if (this.earthExpectancy < 0) {
       this.earthExpectancyString = `You have lived ${this.earthExpectancy * -1} longer than your life expectancy!  Congratulations!`;
     } else if (this.earthExpectancy === 0) {
@@ -75,7 +74,20 @@ class PlanetAge {
     }
     return this.earthExpectancyString;
   }
+  expectMerc() {
+    this.mercuryExpectancy = Math.floor(this.earthExpectancy / mercuryFactor);
+    return this.mercuryExpectancy;
+  }
 
+
+
+
+  // if (this.earthExpectancy < 0) {
+  //   this.earthExpectancyString = `You have lived ${this.earthExpectancy * -1} longer than your life expectancy!  Congratulations! This is how much older you are on these planets:
+  //   Mercury ${Math.floor(this.earthExpectancy * -1 /mercuryFactor)}
+  //   Venus ${Math.floor(this.earthExpectancy * -1 /venusFactor)}
+  //   Mars ${Math.floor(this.earthExpectancy * -1 /marsFactor)}
+  //   Jupiter ${Math.floor(this.earthExpectancy * -1 /jupiterFactor)}`;
 
 
 

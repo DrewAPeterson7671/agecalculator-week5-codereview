@@ -40,15 +40,23 @@ describe('PlanetAge', () => {
   });
   test('checking earth life expectancy string handles a person older than', () => {
     let expectAgeTest2 = new PlanetAge(82, 78);
+    expectAgeTest2.calcExpectancyEarth();
     expect (expectAgeTest2.expectancyBranching()).toEqual("You have lived 4 longer than your life expectancy!  Congratulations!");
   });
   test('checking earth life expectancy string handles a person equal to', () => {
     let expectAgeTest3 = new PlanetAge(78, 78);
+    expectAgeTest3.calcExpectancyEarth();
     expect (expectAgeTest3.expectancyBranching()).toEqual("You have arrived at your life expectancy of 78! Perhaps you should sit down for a minute and take it in.");
   });
   test('checking earth life expectancy string handles a younger person', () => {
     let expectAgeTest4 = new PlanetAge(40, 78);
+    expectAgeTest4.calcExpectancyEarth();
     expect (expectAgeTest4.expectancyBranching()).toEqual("You can totally bank on at least 38 more years of life!  I mean...  you know...  probably!");
+  });
+  test('mars life expectancy calc', () => {
+    let expectMercTest = new PlanetAge(34, 78);
+    expectMercTest.calcExpectancyEarth();
+    expect (expectMercTest.expectMerc()).toEqual(49);
   });
 
 
