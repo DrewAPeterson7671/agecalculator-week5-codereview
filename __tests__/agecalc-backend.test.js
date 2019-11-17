@@ -36,7 +36,7 @@ describe('PlanetAge', () => {
   });
   test('test if earth life expectancy is correct', () => {
     let earthExpectancyTest = new PlanetAge(30, 78);
-    expect (earthExpectancyTest.calcExpectancyEarth()).toEqual(58);
+    expect (earthExpectancyTest.calcExpectancyEarth()).toEqual(48);
   });
   // test('checking earth life expectancy output', () => {
   //   let expectAgeTest2 = new PlanetAge(20, 78);
